@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec babel-node server.js"
+    "start": "nodemon --exec babel-node server.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +19,8 @@
     "express-session": "^1.15.6",
     "jsonwebtoken": "^8.2.1",
     "mongoose": "^5.0.18",
-    "morgan": "^1.9.0"
+    "morgan": "^1.9.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -27,5 +30,6 @@
     "babel-preset-stage-1": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "babel-preset-stage-3": "^6.24.1"
-  }
+  },
+  "snyk": true
 }
